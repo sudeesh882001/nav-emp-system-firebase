@@ -1,0 +1,36 @@
+  {
+    "users": [],
+   "roles": {
+  "r1": { "id": "r1", "name": "superadmin" },
+  "r2": { "id": "r2", "name": "admin" },
+  "r3": { "id": "r3", "name": "employee" }
+},
+
+"designations": {
+  "d1": { "id": "d1", "roleId": "r1", "title": "CEO" },
+  "d2": { "id": "d2", "roleId": "r1", "title": "CFO" },
+  "d3": { "id": "d3", "roleId": "r1", "title": "CTO" },
+  "d4": { "id": "d4", "roleId": "r2", "title": "Administrator" },
+  "d5": { "id": "d5", "roleId": "r2", "title": "Analyst" },
+  "d6": { "id": "d6", "roleId": "r2", "title": "Operations Lead" },
+  "d7": { "id": "d7", "roleId": "r3", "title": "Developer" },
+  "d8": { "id": "d8", "roleId": "r3", "title": "Tester" },
+  "d9": { "id": "d9", "roleId": "r3", "title": "UI/UX Designer" }
+}
+,
+
+    "permissions": [
+      {
+        "roleId": "r1",
+        "crud": true
+      },
+      {
+        "roleId": "r2",
+        "crud": true
+      },
+      {
+        "roleId": "r3",
+        "crud": false
+      }
+    ]
+  }
